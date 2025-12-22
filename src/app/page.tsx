@@ -1,4 +1,6 @@
+
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -59,6 +61,12 @@ export default function Home() {
           >
             Documentation
           </a>
+          <Link href="/test1" className={styles.test1_btn}>
+              Responsive
+          </Link>
+          <Link href="/posts" className={styles.test2_btn}>
+              Posts App
+          </Link>
         </div>
       </main>
     </div>

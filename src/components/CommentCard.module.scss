@@ -1,0 +1,44 @@
+.commentCard {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #1976d2;
+}
+
+.commentTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.commentBody {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 0.75rem;
+  white-space: pre-wrap;
+}
+
+.commentEmail {
+  font-size: 0.9rem;
+  color: #1976d2;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .commentCard {
+    padding: 1rem;
+  }
+
+  .commentTitle {
+    font-size: 1.1rem;
+  }
+
+  .commentBody {
+    font-size: 0.95rem;
+  }
+}
+

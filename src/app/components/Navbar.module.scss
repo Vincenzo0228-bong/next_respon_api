@@ -1,0 +1,256 @@
+.navbar {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  white-space: nowrap;
+  width: max-content;
+}
+
+.navbar a {
+  color: #474031;
+  text-decoration: none;
+  font: 600 15px 'Vela Sans', 'semi-bold', sans-serif;
+  line-height: 100%;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: #c00;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownBtn {
+  color: #474031;
+  padding: 0.5rem 1.2rem 0.5rem 0.8rem;
+  font: 600 15px 'Vela Sans', 'semi-bold', sans-serif;
+  cursor: pointer;
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.dropdownBtn:hover {
+  color: #c00;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ece8e3;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  z-index: 10;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownMenu button {
+  background: none;
+  border: none;
+  color: #887B61;
+  font: 600 15px 'Vela Sans', 'semi-bold', sans-serif;
+  padding: 0.7rem 1.2rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dropdownMenu button:hover {
+  background: #f5f0ec;
+}
+
+.mobileMenuToggle {
+  width:40px;
+  height: 12px;
+  display: none;
+  background: none;
+  border: none;
+  color: #C9A077;
+  cursor: pointer;
+  z-index: 1001;
+  position: relative;
+}
+
+.mobileMenuToggle:hover {
+  color: #c00;
+}
+
+/* Fluid scaling for navbar before converting to icon */
+@media (max-width: 1400px) and (min-width: 1201px) {
+  .navbar {
+    gap: clamp(0.75rem, 1.5vw, 1.5rem);
+  }
+  .navbar a {
+    font-size: clamp(13px, 1vw, 15px);
+  }
+  .dropdownBtn {
+    font-size: clamp(13px, 1vw, 15px);
+    padding: 0.5rem clamp(0.8rem, 1vw, 1.2rem) 0.5rem clamp(0.6rem, 0.8vw, 0.8rem);
+    min-width: clamp(100px, 10vw, 120px);
+  }
+}
+
+/* Convert navbar to icon when viewport is constrained (around 1200px) */
+@media (max-width: 1200px) and (min-width: 769px) {
+  .mobileMenuToggle {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .mobileMenuOverlay {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4rem 1.5rem 1.5rem;
+    gap: 1rem;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+    white-space: normal;
+  }
+
+  .navbar.mobileMenuOpen {
+    display: flex;
+    right: 0;
+  }
+
+  .navbar a {
+    width: 100%;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #ece8e3;
+  }
+
+  .navbar a:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdownBtn {
+    width: 100%;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #ece8e3;
+    min-width: auto;
+  }
+
+  .dropdownMenu {
+    position: static;
+    width: 100%;
+    margin-top: 0.5rem;
+    box-shadow: none;
+    border: none;
+    border-left: 2px solid #ece8e3;
+    padding-left: 1rem;
+  }
+
+  .dropdownMenu button {
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: left;
+  }
+}
+
+.mobileMenuOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+  .mobileMenuToggle {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .mobileMenuOverlay {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4rem 1.5rem 1.5rem;
+    gap: 1rem;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+    white-space: normal;
+  }
+
+  .navbar.mobileMenuOpen {
+    display: flex;
+    right: 0;
+  }
+
+  .navbar a {
+    width: 100%;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #ece8e3;
+  }
+
+  .navbar a:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdownBtn {
+    width: 100%;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #ece8e3;
+    min-width: auto;
+  }
+
+  .dropdownMenu {
+    position: static;
+    width: 100%;
+    margin-top: 0.5rem;
+    box-shadow: none;
+    border: none;
+    border-left: 2px solid #ece8e3;
+    padding-left: 1rem;
+  }
+
+  .dropdownMenu button {
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: left;
+  }
+}
