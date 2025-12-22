@@ -1,0 +1,819 @@
+/* ============================================
+   MAIN CONTAINER & HEADER STYLES
+   ============================================ */
+
+/* Header Navigation Bar - Main navigation container with logo, menu, and toolbar */
+.header_navbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0px 148px;
+}
+/* Logo Image - Responsive logo styling */
+.header_navbar .logo {
+  max-width: 100%;
+  height: auto;
+}
+/* Test1 Main Container - Root container for the entire page */
+.test1 {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+/* Header Section - Top section containing brand bar and navigation */
+.header {
+  left: 0px;
+  top: 0px;
+}
+
+/* Header Brand Bar - Top bar with accessibility info and channel name */
+.header_brand {
+  display: flex;
+  align-items: center;
+  height: 46px;
+  gap: 0.5rem;
+  border-bottom: 1px solid #F5F0EC;
+  padding: 20px 148px;
+}
+/* Brand Title - Left side of brand bar (accessibility version link) */
+.header_brand .brand_title {
+  width: 50%;
+}
+.brand_title p {
+  font: 600 13px 'Vela Sans', 'semi-bold', sans-serif;
+  color: #887B61;
+  float: left;
+  line-height: 100%;
+}
+/* Brand Name - Right side of brand bar (channel name) */
+.header_brand .brand_name {
+  width: 50%;
+  float: right;
+}
+.brand_name p {
+  font: 600 13px 'Vela Sans', 'semi-bold', sans-serif;
+  color: #887B61;
+  float: right;
+  line-height: 100%;
+}
+/* Header Navbar - Main navigation bar container */
+.header_navbar {
+  display: flex;
+  height: 100px;
+  border-bottom: 1px solid #ECE8E3;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* Toolbar - Right side container with phone, search icon, and appointment button */
+.toolbar {
+  align-content: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  height: 100%;
+}
+/* Phone Display - Contact phone number in toolbar */
+.toolbar .phone {
+  display: flex;
+  align-items: center;
+}
+/* Login/Appointment Button Container */
+.toolbar .login {
+  display: flex;
+  align-items: center;
+}
+/* Appointment Button - "Записаться" button styling */
+.toolbar .login button {
+  float: right;
+  width: 176px;
+  height: 64px;
+  border-radius: 60px;
+  background-color: #544B46;
+  font: 700 15px 'Vela Sans', 'Bold', sans-serif;
+  color: #FFFFFF;
+  line-height: 100%;
+  text-align: center;
+  border: solid 1px #544B46;
+}
+/* Phone Number Text - Styling for phone number display */
+.toolbar .phone p {
+  font: 600 15px 'Vela Sans', 'Bold', sans-serif;
+  color: #474031;
+  line-height: 100%;
+}
+
+/* ============================================
+   CONTENT SECTION STYLES
+   ============================================ */
+
+/* Content Container - Main content area wrapper */
+.content {
+  width: 100%;
+  margin-top: 125px;
+  float: left;
+}
+/* Content Title - Section heading "Наши ценности" */
+.content_title p {
+  font: 600 46px 'Vela Sans', 'semi-bold', sans-serif;
+  color: #2A2620;
+  line-height: 126%;
+  text-align: left;
+  padding: 0px 148px;
+}
+/* Contents Container - Wrapper for all value cards with gradient border */
+.contents {
+  margin-top: 60px;
+  border-top: 1px solid;
+  border-image: linear-gradient(90deg, #E5E4D9 0%, #E5E4D9 72%, #E5E4D9 72%, #E5E4DB 100%) 1;
+  float: left;
+}
+/* Card Row - Horizontal container for two cards side by side */
+.card_row {
+  display: flex;
+  border-bottom: solid 1px #E5E4D9;
+  border-bottom-color: linear-gradient(90deg, #E5E4D900 0%, #E5E4D9B8 72%, #E5E4D9, #E5E4D9B8 72%, #E5E4D900 100%) 1;
+  padding: 0 9.25em;
+}
+/* Card Component - Individual value card (50% width, contains number, content, image) */
+.card {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  float: left;
+}
+/* First Card Border - Right border separator between cards */
+.card_row .card:first-child {
+  border-right: solid 1px #E5E4D9;
+}
+/* Card Number - Sequential number indicator (01, 02, etc.) */
+.card_num {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 69px;
+}
+.card_num p {
+  font: 600 18px 'Vela Sans', 'semi-bold', sans-serif;
+  color: #D4B496;
+  line-height: 100%;
+  margin-right: 3em;
+}
+/* Second Card Number Margin - Special margin for second card number */
+.card_row .card:nth-child(2) .card_num p {
+  margin-left: 3em;
+}
+/* Card Content - Text content area (title and description) */
+.card_content {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 69px;
+}
+/* Card Title - Heading for each value card */
+.card_content h1 {
+  font: 600 24px 'Vela Sans', 'semi-bold', sans-serif;
+  color: #202020;
+  line-height: 126%;
+}
+/* Card Description - Body text describing the value */
+.card_content p {
+  margin-top : 55px;
+  font: 600 15px 'Vela Sans', 'semi-bold', sans-serif;
+  color: #5A5857A3;
+  line-height: 170%;
+}
+/* Card Image Container - Right side image for each card */
+.card_img {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.card_img img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+  display: block;
+}
+/* ============================================
+   NEWS/BLOG SECTION STYLES
+   ============================================ */
+
+/* Slide Section - News and blog section container */
+.slide {
+  width:100%;
+  margin-top: 125px;
+  float: left;
+  padding: 0px 148px;
+}
+/* Slide Title - "Новости и блог" heading */
+.slide h1 {
+  font: 600 46px 'Vela Sans', 'semi-bold', sans-serif;
+  color: #2A2620;
+  line-height: 126%;
+  text-align: left;
+}
+/* Slide Content - Container for image slider */
+.slide_content {
+  margin-top: 60px;
+  width:100%;
+}
+/* Slide Images - Maintains original image size (non-responsive) */
+.slide_content img {
+  width: auto;
+  height: auto;
+  max-width: none;
+  display: block;
+  margin: 0 auto;
+}
+/* All Publications Button - "Все публикации" button container */
+.all_pub {
+  margin-top: 70px;
+  text-align: center;
+}
+.all_pub button {
+  width: 202px;
+  height: 60px;
+  background: #544B46;
+  border: 1px solid #544B46;
+  border-radius: 52px;
+  padding: 22px 29px;
+  font: 700 14px 'Vela Sans', 'semi-bold', sans-serif;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.all_pub button p {
+  float:right;
+  color: #BCA489;
+}
+
+/* ============================================
+   FOOTER & CONTACT FORM STYLES
+   ============================================ */
+
+/* Footer Section - Bottom section with background image and contact form */
+.footer {
+  width: 100%;
+  float: left;
+  margin-top: 150px;
+  background-image: url('/assets/img/footer.png');
+  height: 638px;
+  padding: 150px;
+}
+/* Footer Brand - Left side call-to-action text */
+.footer .footer_brand {
+  width: 30%;
+  text-align: left;
+  float: left;
+}
+/* Footer Brand Title - "Запишитесь к нам на прием" heading */
+.footer .footer_brand .brand_title {
+  font: 600 46px 'Vela Sans', 'semi-bold', sans-serif;
+  color: #FFFFFF;
+  line-height: 140%;
+}
+/* Footer Brand Comment - Descriptive text below title */
+.footer .footer_brand .brand_comment {
+  margin-top: 126px;
+  font: 500 16px 'Vela Sans', 'medium', sans-serif;
+  color: #FFFFFF;
+  opacity: 0.7;
+  line-height: 170%;
+}
+/* Contact Form Container - Right side form area */
+.footer .contact {
+  width: 55%;
+  margin-left: 15%;
+  float: left;
+}
+/* Contact Form - Form wrapper */
+.footer .contact_form {
+  float: left;
+  width: 100%;
+}
+/* User Info Fields - Container for name, phone, and email inputs */
+.user_info {
+  width: 100%;
+  float: left;
+}
+/* Form Group - Individual form field container (32% width for 3 columns) */
+.user_info .form_group {
+  width: 32%;
+  float: left;
+  margin-right: 1%;
+}
+/* Form Label - Field label styling */
+.form_group label {
+  display: block;
+  text-align: left;
+  font: 500 14px 'Vela Sans', 'medium', sans-serif;
+  color: #DFDEDD;
+  line-height: 126%;
+}
+/* Form Input - Text input field styling with bottom border */
+.contact_form .form_group input {
+  width: 100%;
+  border: none;
+  border-bottom: solid 1px #FFFFFF;
+  font: 500 16px 'Vela Sans', 'medium', sans-serif;
+  color: #DFDEDD;
+  line-height: 126%;
+  padding: 22px 0px;
+  background-color: transparent;
+  outline: none;
+}
+/* Input Error State - Red border for invalid phone input */
+.contact_form .form_group input.input_error {
+  border-bottom: solid 1px #f44336;
+}
+/* Error Message - Validation error text below input */
+.error_message {
+  display: block;
+  color: #f44336;
+  font: 400 12px 'Vela Sans', 'Regular', sans-serif;
+  margin-top: 5px;
+  line-height: 140%;
+}
+/* User Comment Field - Comment/note input container */
+.contact_form .user_comment {
+  width: 98%;
+  float: left;
+  margin-top: 45px;
+}
+/* User Submit Section - Submit button, checkbox, and terms container */
+.contact_form .user_submit {
+  width: 100%;
+  float: left;
+  margin-top: 53px;
+}
+/* Submit Button - Form submission button */
+.contact_form .user_submit button {
+  width: 201px;
+  height: 64px;
+  float: left;
+  border-radius: 60px;
+  border: solid 1px #BFA88F;
+  font: 700 15px 'Vela Sans', 'Bold', sans-serif;
+  color: #544B46;
+  line-height: 100%;
+  background-color: #FFFFFF;
+}
+/* Privacy Checkbox - Consent checkbox styling */
+.contact_form .user_submit input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  background-color: #544B46;
+  float: left;
+  margin-left: 45px;
+}
+/* Privacy Terms Text - Terms and conditions text */
+.contact_form .user_submit p {
+  width: 57%;
+  float: left;
+  margin-left: 10px;
+  font: 400 14px 'Vela Sans', 'Regular', sans-serif;
+  color: #FFFFFF52;
+  line-height: 22px;
+  text-align: left;
+}
+/* Submit Message Container - Success/error notification wrapper */
+.submit_message {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  font: 500 14px 'Vela Sans', 'medium', sans-serif;
+  text-align: left;
+  float: left;
+}
+/* Success Message - Green background for successful submission */
+.submit_message.success {
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  border: 1px solid #45a049;
+}
+/* Error Message - Red background for submission errors */
+.submit_message.error {
+  background-color: #f44336;
+  color: #FFFFFF;
+  border: 1px solid #da190b;
+}
+/* Disabled Submit Button - Grayed out state during submission */
+.contact_form .user_submit button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* ============================================
+   RESPONSIVE DESIGN STYLES
+   ============================================ */
+
+/* Responsive Design Additions */
+// @media (max-width: 1200px) {
+//   .header_navbar {
+//     flex-direction: column;
+//     height: auto;
+//     gap: 1rem;
+//   }
+//   .logo {
+//     margin-left: 0;
+//     width: 180px !important;
+//     height: auto !important;
+//   }
+//   .dropdown {
+//     margin-left: 0.5rem;
+//   }
+//   .toolbar .login button {
+//     width: 150px;
+//     height: 56px;
+//     font-size: 14px;
+//   }
+//   .content_title p {
+//     font-size: 2rem;
+//     padding: 0 1rem;
+//   }
+//   .card {
+//     flex-direction: column;
+//     width: 100%;
+//     padding-left: 0;
+//   }
+//   .card_img {
+//     width: 100%;
+//     justify-content: center;
+//     align-items: center;
+//     margin-top: 1rem;
+//     display: flex;
+//   }
+//   .card_img img {
+//     max-width: 320px;
+//     width: 100%;
+//     height: auto;
+//     object-fit: cover;
+//     aspect-ratio: 4/3;
+//     margin: 0 auto;
+//     display: block;
+//   }
+//   .card_content {
+//     width: 100%;
+//     margin-top: 1rem;
+//   }
+// }
+
+/* Fluid Responsive Styles (769px - 1400px) - Smooth scaling between desktop and tablet */
+@media (max-width: 1400px) and (min-width: 769px) {
+  .header_brand {
+    padding: 20px clamp(1rem, 8vw, 148px);
+  }
+  .header_navbar {
+    padding: 0px clamp(1rem, 8vw, 148px);
+    gap: clamp(1rem, 2vw, 2rem);
+  }
+  .header_navbar .logo {
+    width: clamp(180px, 25vw, 352px) !important;
+    height: auto !important;
+  }
+  .toolbar {
+    gap: clamp(0.75rem, 1.5vw, 1.5rem);
+  }
+  .toolbar .login button {
+    width: clamp(140px, 12vw, 176px);
+    height: clamp(50px, 5vw, 64px);
+    font-size: clamp(13px, 1vw, 15px);
+  }
+  .toolbar .phone p {
+    font-size: clamp(13px, 1vw, 15px);
+  }
+}
+
+/* Tablet & Mobile Styles (≤768px) - Grid layout for header, card image moves below */
+@media (max-width: 768px) {
+  .header_brand {
+    flex-direction: row;
+    height: auto;
+    gap: 0.5rem;
+    padding: 10px 1rem;
+    align-items: center;
+  }
+  .header_brand .brand_title {
+    width: 50%;
+  }
+  .brand_title p {
+    font: 600 13px 'Vela Sans', 'semi-bold', sans-serif;
+    color: #887B61;
+    float: left;
+    line-height: 100%;
+  }
+  .header_brand .brand_name {
+    width: 50%;
+    float: right;
+  }
+  .brand_name p {
+    font: 600 13px 'Vela Sans', 'semi-bold', sans-serif;
+    color: #887B61;
+    float: right;
+    line-height: 100%;
+  }
+  .header_navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 0.5rem;
+    height: auto;
+    padding: 0px 1rem;
+    position: relative;
+  }
+  .header_navbar .logo {
+    justify-self: start;
+    grid-column: 1;
+    width: 180px !important;
+    height: auto !important;
+    max-width: 100%;
+  }
+  .header_navbar > nav {
+    justify-self: center;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+  }
+  .toolbar {
+    justify-self: end;
+    grid-column: 3;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    display: flex;
+    align-items: center;
+  }
+  .toolbar .phone {
+    display: none;
+  }
+  .toolbar .login button {
+    width: 140px;
+    height: 50px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .content {
+    margin-top: 80px;
+    padding: 0 0.5rem;
+  }
+  .contents {
+    margin-top: 60px;
+    border-top-width: 0.5px;
+  }
+  .card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 1rem;
+  }
+  .card_row {
+    padding: 0px 0px;
+  }
+  .card {
+    padding: 0px 30px;
+  }
+  .card_num {
+    order: 1;
+    width: auto;
+  }
+  .card_row .card:nth-child(2) .card_num p {
+    margin-left: 0.4em;
+  }
+  .card_content {
+    order: 2;
+    width: auto;
+    flex: 1;
+  }
+  .card_img {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    display: flex;
+  }
+  .card_img img {
+    max-width: 260px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    margin: 0 auto;
+    display: block;
+  }
+  /* Image slider styles removed to maintain desktop behavior */
+  .footer {
+    padding: 1rem;
+    height: auto;
+    margin-top: 60px;
+  }
+  .footer .footer_brand {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  .footer .contact {
+    width: 100%;
+    margin-left: 0;
+    float: none;
+  }
+}
+
+/* Small Mobile Styles (≤375px) - Cards stack vertically, compact spacing */
+@media (max-width: 375px) {
+  .header {
+    height: auto;
+    padding: 0.5rem;
+  }
+  .brand_title {
+    width: 65% !important;
+  }
+  .brand_title p {
+    font: 600 9px 'Vela Sans', 'semi-bold', sans-serif;
+  }
+  .header_brand .brand_name {
+    width: 35% !important;
+  }
+  .brand_name p {
+    font: 600 9px 'Vela Sans', 'semi-bold', sans-serif;
+  }
+  .header_navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 0.5rem;
+    height: auto;
+    padding: 0.5rem;
+  }
+  .header_navbar .logo {
+    justify-self: start;
+    grid-column: 1;
+    width: 120px !important;
+    height: auto !important;
+    max-width: 100%;
+  }
+  .header_navbar .logo img,
+  .header_navbar .logo > span,
+  .header_navbar .logo > span img {
+    width: 120px !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
+  .header_navbar > nav {
+    justify-self: center;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+  }
+  .toolbar {
+    justify-self: end;
+    grid-column: 3;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .toolbar .phone {
+    display: none;
+  }
+  .toolbar .login button {
+    width: 120px;
+    max-width: 100%;
+    height: 44px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .content {
+    width: 100%;
+    margin-top: 60px;
+    float: left;
+  }
+  .contents {
+    margin-top: 50px;
+    border-top: 1px solid;
+    border-image: linear-gradient(90deg, #E5E4D9 0%, #E5E4D9 72%, #E5E4D9 72%, #E5E4DB 100%) 1;
+    float: left;
+  }
+  .content_title p {
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+  }
+  .card_row {
+    flex-direction: column;
+    padding: 0 0.5rem;
+  }
+  .card_row .card:first-child {
+    border-right: none;
+    border-bottom: solid 1px #E5E4D9;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+  .card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0;
+  }
+  .card_num {
+    order: 1;
+    width: auto;
+    margin-top: 0.6em;
+  }
+  .card_num p {
+    margin-right: 10px;
+  }
+  .card_content {
+    order: 2;
+    width: auto;
+    flex: 1;
+    margin-top: 0;
+  }
+  .card_img {
+    order: 3;
+    width: 100%;
+  }
+  .card_img {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    display: flex;
+  }
+  .card_img img {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    margin: 0 auto;
+    display: block;
+  }
+  .card_content {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  .slide {
+    padding: 0px;
+  }
+  .slide h1 {
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+  }
+  .slide_content img {
+    max-width: none;
+    width: auto;
+    height: auto;
+  }
+  .footer {
+    padding: 0.5rem;
+    height: auto;
+    margin-top: 162px;
+  }
+  .footer .footer_brand {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  .footer .footer_brand .brand_title{
+    font-size: 28px;
+    text-align: left;
+  }
+  .footer .footer_brand .brand_comment {
+    font-size: 14px;
+    text-align: left;
+    margin-top: 20px;
+  }
+  .footer .contact {
+    width: 100%;
+    margin-left: 0;
+    float: left;
+    margin-top: 35px;
+  }
+  .user_info .form_group {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  .contact_form .user_submit button {
+    width: 100%;
+    height: 48px;
+    font-size: 1rem;
+    margin-bottom: 17px;
+  }
+}

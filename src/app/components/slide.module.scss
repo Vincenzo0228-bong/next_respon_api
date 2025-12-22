@@ -1,0 +1,82 @@
+.swiper {
+    width: 100%;
+    margin: 0 auto;
+}
+.pro_details .price {
+    margin-top: 40px;
+    font: 600 14px 'Vela Sans', 'semi-bold', sans-serif;
+    color: #B2A487;
+    line-height: 170%;
+    text-align: left;
+}
+.pro_details .title {
+    margin-top: 40px;
+    font: 600 20px 'Vela Sans', 'semi-bold', sans-serif;
+    color: #2A2620;
+    line-height: 140%;
+    text-align: left;
+}
+.pro_details .comment {
+    margin-top: 40px;
+    font: 400 16px 'Vela Sans', 'semi-bold', sans-serif;
+    color: #5A5857A3;
+    line-height: 170%;
+    text-align: left;
+}
+.contact {
+    width: 50%;
+    margin-left: 20%;
+}
+.sliderContainer {
+  position: relative;
+  width: 100%;
+}
+
+.sliderButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: rgba(255,255,255,0.8);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+.sliderButtonLeft {
+  left: 10px;
+}
+.sliderButtonRight {
+  right: 10px;
+}
+
+@media (max-width: 900px) {
+  .sliderButton {
+    width: 36px;
+    height: 36px;
+  }
+  .sliderButtonLeft {
+    left: 5px;
+  }
+  .sliderButtonRight {
+    right: 5px;
+  }
+}
+@media (max-width: 600px) {
+  .sliderButton {
+    width: 32px;
+    height: 32px;
+  }
+  .sliderButtonLeft {
+    left: 2px;
+  }
+  .sliderButtonRight {
+    right: 2px;
+  }
+}
